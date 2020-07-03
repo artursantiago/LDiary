@@ -42,9 +42,10 @@ int App::run(int argc, char* argv[]){
           return 1;
       }
     }
-
   } else if(action == "interactive") {
     return interactive_menu();
+  } else if (action == "help") {
+    help(argv[0]);
   } else {
     return show_usage(argv[0]);
   }
@@ -130,13 +131,17 @@ void App::search(const std::string& what) {
 }
 
 int App::show_usage(const std::string &filename) {
-  std::cout << "Command not found.\n" << std::endl
-            << "Acceptable commands: " << std::endl 
+  std::cout << "Command not found.\n" << std::endl;
+  help(filename);
+  return 1;
+}
+
+void App::help(const std::string &filename) {
+  std::cout << "Acceptable commands: " << std::endl 
             << " - List messages: " << filename << " list <format>" << std::endl
             << " - Add new message: " << filename << " add <message> " << std::endl
             << " - Search for message containing substring: " << filename << " search <substring> " << std::endl
             << " - Open interactive mode: " << filename << " interactive" << std::endl;
-  return 1;
 }
 
 int App::interactive_menu() {

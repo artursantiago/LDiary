@@ -20,6 +20,7 @@ struct App
   void list_messages(const std::vector<Message*>& messages);
   void search(const std::string& what);
   int show_usage(const std::string &filename);
+  void help(const std::string &filename);
   int interactive_menu();
 };
 
