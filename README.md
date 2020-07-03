@@ -9,16 +9,14 @@
   <img alt="GitHub forks" src="https://img.shields.io/github/forks/artursantiago/LDiary">
 </p>
 
-## 🧐 About
-
 ## How to use 👨🏻‍💻
 - Clone this repository and enter it
-```bash
+```
  $ git clone https://github.com/artursantiago/LDiary.git && cd LDiary
  ```
  
 - Now you can easily use Makefile to compile the project:
-```bash
+```
  $ make
  ```
 
@@ -27,29 +25,29 @@ After you compile the project, it will generate the compiled file with the name 
 1. **Command line**
 
   - Add
-  ```bash
-   $ ./diary add <message>
- ```
+```
+$ ./diary add <message>
+```
  
    - List
-   ```bash
-   $ ./diary list <format>
- ```
+```
+$ ./diary list <format>
+```
  
    - Search
-   ```bash
-   $ ./diary search <substring>
- ```
+```
+$ ./diary search <substring>
+```
 
 2. **Interactive mode**
-  ```bash
-   $ ./diary interactive
- ```
+```
+$ ./diary interactive
+```
  
 * If you have difficulty in what action to take just ask for help:
-  ```bash
-   $ ./diary help
- ```
+```
+$ ./diary help
+```
 
 <blockquote alt="[ignore]">
   <p>
